@@ -1,10 +1,10 @@
-Project1 - Restaurant
+# Project1 - Restaurant
 
-Description
+## Description
 
-I created a modern and interactive website for a restaurant, with the aim of reflecting the brand's visual identity and providing customers with a pleasant and functional online experience.
+### I created a modern and interactive website for a restaurant, with the aim of reflecting the brand's visual identity and providing customers with a pleasant and functional online experience.
 
-##The website includes:
+## The website includes:
 - Responsive design, optimized for mobile, tablet and desktop devices;
 - Interactive menu, organized by category, with appetizing images and detailed descriptions of dishes;
 - Online reservation section, integrated with contact form and calendar;
