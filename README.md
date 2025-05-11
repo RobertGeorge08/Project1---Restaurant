@@ -13,3 +13,6 @@
 - Photo gallery with images from the restaurant and special events;
 - Useful information, such as opening hours, location integrated with Google Maps and contact details.
 - Technologies used include HTML5, CSS3, JavaScript.
+
+## Photos
+![image_alt](https://github.com/RobertGeorge08/Project1---Restaurant/blob/4d58f285ccf6b8ac5879d5ab35d2202e133fbb2a/photo1.png)
