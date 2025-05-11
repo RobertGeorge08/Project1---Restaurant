@@ -1,5 +1,7 @@
 # Project1 - Restaurant
 
+### This is a web page created for a restaurant, an individual project made to highlight my skills in front-end web development.
+
 ## Description
 
 ### I created a modern and interactive website for a restaurant, with the aim of reflecting the brand's visual identity and providing customers with a pleasant and functional online experience.
