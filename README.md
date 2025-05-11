@@ -16,3 +16,9 @@
 
 ## Photos
 ![image_alt](https://github.com/RobertGeorge08/Project1---Restaurant/blob/4d58f285ccf6b8ac5879d5ab35d2202e133fbb2a/photo1.png)
+![image_alt](https://github.com/RobertGeorge08/Project1---Restaurant/blob/51f76a4480a8a224aa03a6c8e071480b7aaf973a/photo2.png)
+![image_alt](https://github.com/RobertGeorge08/Project1---Restaurant/blob/51f76a4480a8a224aa03a6c8e071480b7aaf973a/photo3.png)
+![image_alt](https://github.com/RobertGeorge08/Project1---Restaurant/blob/51f76a4480a8a224aa03a6c8e071480b7aaf973a/photo4.png)
+![image_alt](https://github.com/RobertGeorge08/Project1---Restaurant/blob/51f76a4480a8a224aa03a6c8e071480b7aaf973a/photo5.png)
+![image_alt](https://github.com/RobertGeorge08/Project1---Restaurant/blob/51f76a4480a8a224aa03a6c8e071480b7aaf973a/photo6.png)
+![image_alt](https://github.com/RobertGeorge08/Project1---Restaurant/blob/51f76a4480a8a224aa03a6c8e071480b7aaf973a/photo7.png)
