@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Declarația DOCTYPE specifică tipul documentului (HTML5 în acest caz) -->
+        <meta charset="UTF-8">
+        <!-- Specifică setul de caractere folosit pentru a afișa pagina -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Asigură compatibilitatea cu browser-ele mai vechi -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Include fonturi și pictograme de pe Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <!-- Favicon-ul folosit pentru tab-ul browser-ului -->
+        <link rel="icon" type="image/x-icon" href="images/logo.png">
+        <!-- Include Bootstrap pentru stilizare și componente -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Include fișierul CSS personalizat -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- Include biblioteca CountUp.js pentru animații numerice -->
+        <script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.8/dist/countUp.min.js"></script>
+        <title>Proiect</title>
+    </head>
+    <body>
+        <div class="container-fluid position-relative p-0">
+            <!-- Bara de navigare -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <!-- Logo-ul site-ului -->
+                    <h1 class="text-primary m-0">
+                        <img src="images/logo.png" alt="Logo" style="width: 75px; height: 75px;">
+                    </h1>
+                </a>
+                <!-- Butonul pentru afișarea meniului pe ecrane mici -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <!-- Elementele din meniul de navigare -->
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="" class="nav-item nav-link active">Acasă</a>
+                        <a href="#servicii" class="nav-item nav-link">Servicii</a>
+                        <a href="#despre" class="nav-item nav-link">Despre Noi</a>
+                        <a href="#meniu" class="nav-item nav-link">Meniu</a>
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                    </div>
+                    <!-- Butonul pentru rezervări -->
+                    <a href="#rezervari" class="btn btn-primary py-2 px-4" style="background-color: #f58a42; outline: #f58a42; border: #f58a42;">Rezervari</a>
+                </div>
+            </nav>
+
+            <!-- Secțiunea Hero -->
+            <div class="container-fluid py-5 bg-dark hero-header mb-5">
+                <div class="container my-5 py-5">
+                    <div class="row align-items-center g-5">
+                        <!-- Textul și butonul din partea stângă -->
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="display-3 text-white animated slideInLeft">Bucurați-vă de delicatesele<br> noastre unice! </h1>
+                            <p class="text-white animated slideInLeft mb-4 pb-2">Mâncarea bună aduce oameni împreună!</p>
+                            <a href="#rezervari" class="btn btn-primary py-sm-3 px-sm-5 slideInLeft" style="background-color: #f58a42; outline: #f58a42; border: #f58a42;">Rezerva o masa</a>
+                        </div>
+                        <!-- Imaginea din partea dreaptă -->
+                        <div class="col-lg-6 text-center">
+                            <img src="images/food3.jpg" class="img-fluid animated slideInRight" alt="Delicious food" style="width: 550px; height: 350;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secțiunea de Servicii -->
+        <section id="servicii">
+            <div class="text-center wow fadeInUp">
+                <!-- Titlul secțiunii -->
+                <h2 class="section-title ff-secondary text-center text-primary fw-normal">Servicii</h2>
+            </div>
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="row g-4">
+                        <!-- Cardul 1: Maeștri Bucătari -->
+                        <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="service-item rounded pt-3">
+                                <div class="p-4">
+                                    <i class="fa fa-3x fa-user-tie"></i>
+                                    <h5>Maeștri Bucătari</h5>
+                                    <p>Maeștrii bucătari sunt adevărați artiști ai gastronomiei, transformând fiecare preparat într-o operă de artă culinară. Aceștia combină tehnici avansate, perfecționate de-a lungul anilor, cu o doză generoasă de creativitate, pentru a oferi o experiență multisenzorială fiecărui client. Fiecare farfurie este rezultatul unui proces complex, care implică nu doar gătit, ci și o înțelegere profundă a texturilor, aromelor și prezentării estetice.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cardul 2: Preparate de Calitate -->
+                        <div class="col-lg-3 col-sm-6 wow fadeInUp">
+                            <div class="service-item rounded pt-3">
+                                <div class="p-4">
+                                    <i class="fa fa-3x fa-utensils text-dark mb-4"></i>
+                                    <h5>Preparate de Calitate</h5>
+                                    <p>Toate ingredientele folosite de maeștrii bucătari sunt atent selectate, procesul de selecție fiind un element esențial al artei lor culinare. Alegerea ingredientelor nu se bazează doar pe calitatea acestora, ci și pe povestea, originea și impactul pe care le au asupra preparatului final. Acest nivel de atenție garantează nu doar un gust desăvârșit, ci și o experiență culinară autentică și memorabilă.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cardul 3: Comenzi Online -->
+                        <div class="col-lg-3 col-sm-6 wow fadeInUp">
+                            <div class="service-item rounded pt-3">
+                                <div class="p-4">
+                                    <i class="fa fa-3x fa-cart-plus text-dark mb-4"></i>
+                                    <h5>Comenzi Online</h5>
+                                    <p>Preparatele sunt livrate direct la ușa ta, rapid și comod, oferindu-ți astfel o experiență culinară de calitate, fără să fie nevoie să ieși din confortul casei tale. Fie că este vorba despre o cină sofisticată, o masă de prânz rapidă sau o ocazie specială, serviciul de livrare este conceput pentru a-ți oferi nu doar mâncare delicioasă, ci și un proces simplu și eficient.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cardul 4: Servicii 24/7 -->
+                        <div class="col-lg-3 col-sm-6 wow fadeInUp">
+                            <div class="service-item rounded pt-3">
+                                <div class="p-4">
+                                    <i class="fa fa-3x fa-headset text-dark mb-4"></i>
+                                    <h5>Servicii 24/7</h5>
+                                    <p>Suntem disponibili la orice oră pentru a-ți oferi preparate de calitate, asigurându-ne că poți savura mâncăruri delicioase oricând ai nevoie, indiferent de momentul zilei sau al nopții. Indiferent dacă ai poftă de o masă rapidă dimineața, de un prânz consistent sau de o cină târzie după o zi lungă, suntem aici pentru a transforma fiecare masă într-o experiență memorabilă.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sfârșitul secțiunii de Servicii -->
+
+    <!--About section start-->
+    <section id="despre">
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g align-items-center">
+
+                    <div class="col-lg-6">
+                        <div class="row g-3">
+                            <div class="col-6 text-start">
+                                <img src="images/restaurant.png" class="img-fluid rounded w-100 wow zoomIn" alt="Restaurant">
+                            </div>
+                            <div class="col-6 text-start">
+                                <img src="images/restaurant2.png" class="img-fluid rounded w-75 wow zoomIn" alt="Restaurant" style="margin-top: 10%;">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-75 wow zoomIn" src="images/restaurant3.png" alt="Restaurant">
+                            </div>
+                            <div class="col-6 text-end">
+                                <img class="img-fluid rounded w-100 wow zoomIn" src="images/restaurant4.png" alt="Restaurant">
+                            </div>
+
+                        </div>
+                    </div>
+               
+                    <div class="col-lg-6">
+                        <h2 class="section-title ff-secondary text-start text-primary fw-normal">Despre Noi</h2>
+                        <h3 class="mb-4">Bine ați venit <i class="fa fa-utensils text-primary me-2"></i>la restaurantul nostru!</h3>
+                        <p class="mb-4">La restaurantul nostru, pasiunea pentru gastronomie se întâlnește cu inovația și tradiția. Fiecare preparat este realizat cu cele mai proaspete ingrediente, provenite de la furnizori locali de încredere. Ne mândrim cu echipa noastră de maeștri bucătari care aduc în farfurie arome unice, îmbinând tehnici moderne cu rețete clasice, pentru a oferi o experiență culinară de neuitat. Într-un decor elegant și primitor, îți oferim nu doar o masă, ci o adevărată călătorie a simțurilor, pentru ca fiecare vizită să fie memorabilă.</p>
+                        <p class="mb-4">În inima restaurantului nostru, punem accent pe confortul și satisfacția fiecărui client. Fie că este vorba despre o cină romantică, o întâlnire de afaceri sau o seară cu prietenii, ne asigurăm că atmosfera și serviciile noastre sunt impecabile. Suntem dedicați să oferim un serviciu excepțional, iar fiecare detaliu este gândit pentru a transforma fiecare masă într-o experiență desăvârșită. La noi, vei găsi nu doar mâncare de calitate, ci și o atmosferă care te face să te simți ca acasă.
+
+                        </p>
+                        <div class="row g-4 mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="border-start border-5 border-primary me-2" style="height: 50px;"></div>
+                                    <h1 id="numarExperienta" class="flex-shrink-0 display-5 text-primary mb-0 animate-number">0</h1>
+
+                                    <div class="ps-4">
+                                        <p class="mb-0">Ani de</p>
+                                        <h6 class="text-uppercase mb-0 fw-bold">experiență</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="border-start border-5 border-primary me-2" style="height: 50px;"></div>
+                                    <h1 id="numarMancare" class="flex-shrink-0 display-5 text-primary mb-0 animate-number">0</h1>
+                                    <div class="ps-4">
+                                        <p class="mb-0">Maeștri bucătari</p>
+                                        <h6 class="text-uppercase mb-0 fw-bold">renumiți</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="" class="btn btn-primary py-3 px-5 mt-2">Citește mai mult</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!--About section ends-->
+
+        <!--Menu section start-->
+    <section id="meniu">
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp">
+                    <h2 class="section-title ff-secondary text-center text-primary fw-normal">Meniu</h2>
+                    <h3 class="mb-5">Preparate Populare</h3>
+                </div>
+                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.15" >
+                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                        <li class="nav-item">
+                            <a href="" class="d-flex align-items-center text-start mx-3 pb-3">
+                                <i class="fa fa-hamburger fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Prânz</small>
+                                    <h6 class="mt-n1 mb-0 fw-bold text-dark">Special</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="d-flex align-items-center text-start mx-3 pb-3">
+                                <i class="fa fa-utensils fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Cină</small>
+                                    <h6 class="mt-n1 mb-0 fw-bold text-dark">Minunată</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="d-flex align-items-center text-start mx-3 pb-3">
+                                <i class="fa fa-coffee fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Mic dejun</small>
+                                    <h6 class="mt-n1 mb-0 fw-bold text-dark">Popular</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img src="images/food_beef.jpg" class="flex-shrink-0 img-fluid rounded w-25" alt="Menu">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Burger de Vită</span>
+                                                <span class="text-primary">$100</span>
+                                            </h5>
+                                            <small class="fst-italic">Burgerul nostru de vită este o adevărată delectare pentru iubitorii de carne de calitate. Preparat cu carne de vită suculentă și bine condimentată, acest burger aduce laolaltă toate aromele autentice, servit pe un chiflă moale și proaspăt coaptă. Fiecare îmbucătură oferă un echilibru perfect între texturile crocante și fine, însoțite de ingrediente proaspete precum salata verde crocantă, roșii suculente și brânză topită, care completează gustul desăvârșit al cărnii. Adăugăm o notă de savoare cu sosuri speciale, oferindu-ți o experiență culinară de neuitat. Indiferent de modul în care îl preferi, burgerul nostru de vită îți va satisface toate poftele.</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img src="images/food_chicken.png" class="flex-shrink-0 img-fluid rounded w-25" alt="Menu">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Burger de Pui</span>
+                                                <span class="text-primary">$100</span>
+                                            </h5>
+                                            <small class="fst-italic">Burgerul nostru de pui este o alegere delicioasă și ușor mai ușoară, perfectă pentru o masă savuroasă. Preparat cu piept de pui suculent, bine condimentat și gătit la perfecțiune, acest burger îți oferă o combinație de texturi crocante la exterior și fragede la interior. Servit pe o chiflă moale și proaspătă, burgerul este completat cu legume proaspete, precum salată verde, roșii și castraveți, iar brânza cremoasă și sosurile speciale aduc un plus de savoare. Oferă un gust echilibrat, cu note delicate, dar pline de aromă, care te vor face să vrei încă o îmbucătură. Perfect pentru o masă rapidă sau o cină delicioasă alături de cei dragi!</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img src="images/foie.jpg" class="flex-shrink-0 img-fluid rounded w-25" alt="Menu">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Foie Gras</span>
+                                                <span class="text-primary">$200</span>
+                                            </h5>
+                                            <small class="fst-italic">Foie gras-ul nostru este un deliciu rafinat, care aduce un gust unic și o textură cremoasă desăvârșită. Preparat din ficat de rață sau gâscă de cea mai bună calitate, acest preparat este gătit lent, pentru a păstra savoarea intensă și finețea caracteristică. Servit alături de o felie subțire de pâine prăjită și un topping delicat de dulceață de fructe sau de ceapă caramelizată, foie gras-ul nostru oferă o experiență culinară de neuitat, cu note delicate, bogate și sofisticate. Este alegerea perfectă pentru o masă elegantă, fiind apreciat de cunoscători pentru rafinamentul și unicitatea sa.</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img src="images/lobstar.jpg" class="flex-shrink-0 img-fluid rounded w-25" alt="Menu">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Lobster Thermidor</span>
+                                                <span class="text-primary">$200</span>
+                                            </h5>
+                                            <small class="fst-italic">Lobster Thermidor la restaurantul nostru este un preparat de excepție, destinat celor care doresc să se răsfețe cu o experiență culinară de neuitat. Fiecare homar este gătit cu măiestrie și atenție la detalii, apoi este scos din cochilie și combinat cu un sos cremos pe bază de vin alb, muștar Dijon, smântână și brânză fină, rezultând un amestec perfect echilibrat de arome delicate și bogate. Acest preparat este gratinat la cuptor până când capătă o crustă aurie, crocantă, care se combină minunat cu textura suculentă și delicată a homarului.</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img src="images/tournedos.jpg" class="flex-shrink-0 img-fluid rounded w-25" alt="Menu">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Tournedos Rossini</span>
+                                                <span class="text-primary">$300</span>
+                                            </h5>
+                                            <small class="fst-italic">Tournedos Rossini la restaurantul nostru este o adevărată capodoperă culinară, o alegere rafinată pentru cei care doresc o experiență deosebită. Preparatul constă într-un medalion de vită suculent, gătit perfect la temperatură medie, care păstrează toate savoarea și fragezimea cărnii. Acesta este așezat pe un pat de pâine prăjită, apoi îmbogățit cu un strat generos de foie gras, un ingredient nobil care adaugă o savoare unică și sofisticată. Totul este acompaniat de o delicioasă reducție de vin roșu, care completează perfect acest preparat de lux.</small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img src="images/langustine.jpg" class="flex-shrink-0 img-fluid rounded w-25" alt="Menu">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Langoustine la grătar</span>
+                                                <span class="text-primary">$300</span>
+                                            </h5>
+                                            <small class="fst-italic">Langoustine la grătar la restaurantul nostru este o delicatesă marină de neuitat, perfectă pentru iubitorii de fructe de mare. Acești mici creveți, cu un gust delicat și o textură fermă, sunt gătite la grătar pentru a le accentua aroma naturală și a le oferi o ușoară crocănțime la exterior, păstrându-le în același timp suculente și fragede în interior. La fiecare porție, langoustinele sunt acompaniate de o marinadă specială, realizată cu ierburi aromatice și un strop de ulei de măsline extravirgin, pentru a le adânci aroma. Servite alături de un sos proaspăt de citrice și usturoi, acest preparat este o explozie de gusturi sofisticate care te va transporta într-o experiență culinară de neuitat. </small>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   <!--Menu section ends-->
+    <!--Reservation section start-->
+    <section id="rezervari">
+        <div class="container-xxl py-5 px-0 wow fadeInUp">
+            <div class="row g-0">
+                <!-- Formularul de rezervări -->
+                <div class="col-md-6 bg-dark align-items-center">
+                    <div class="p-5">
+                        <h2 class="section-title ff-secondary text-start text-primary fw-normal">
+                            Rezervări 
+                        </h2>
+                        <h3 class="text-white mb-4">
+                            Rezervă o Masă Online
+                        </h3>
+                        <form action="/submit" method="POST" id="reservationForm">
+                            <div class="row g-3">
+                                <!-- Nume -->
+                                <div class="col-mb-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Nume" required>
+                                        <label for="name">Nume</label>
+                                    </div>
+                                </div>
+                
+                                <!-- Email -->
+                                <div class="col-mb-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                                        <label for="email">Email</label>
+                                    </div>
+                                </div>
+                
+                                <!-- Data și Ora -->
+                                <div class="col-mb-6">
+                                    <div class="form-floating date" id="date3">
+                                        <input type="datetime-local" class="form-control" id="datetime" name="datetime" placeholder="Data & Ora" required>
+                                        <label for="datetime">Data & Ora</label>
+                                    </div>
+                                </div>
+                
+                                <!-- Număr persoane -->
+                                <div class="col-mb-6">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="numPersons" name="numPersons" required>
+                                            <option value="1">1 persoană</option>
+                                            <option value="2">2 persoane</option>
+                                            <option value="3">3 persoane</option>
+                                            <option value="4">4 persoane</option>
+                                        </select>
+                                        <label for="numPersons">Număr persoane</label>
+                                    </div>
+                                </div>
+                
+                                <!-- Observații -->
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="message" name="observations" placeholder="Observații" style="height: 100px;"></textarea>
+                                        <label for="message">Observații</label>
+                                    </div>
+                                </div>
+                
+                                <!-- Butonul de trimitere -->
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Rezervă Acum</button>
+                                </div>
+                            </div>
+                        </form>         
+                    </div>
+                </div>
+                <!-- Videoclipul -->
+                <div class="col-md-6">
+                    <div class="video-container">
+                        <iframe class="video-iframe" 
+                        src="https://www.youtube.com/embed/32T8Oja5Yn4" 
+                        frameborder="0" 
+                        allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content rounded-0">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="" class="embed-responsive-item" id="video" allowfullscreen="always" allow="autoplay"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!--Reservation section ends-->
+
+        <!--Team section start-->
+        <div class="container-xxl pt-5 pb-3">
+            <div class="container">
+                <div class="text-center wow fadeInUp">
+                    <h2 class="section-title ff-secondary text-center text-primary fw-bold">
+                        Echipa
+                    </h2>
+                    <h3 class="mb-5">Maeștrii noștri bucătari</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="images/teamP1.jpg" alt="Chef Photo">
+                            </div>
+                            <h5 class="mb-0">James Smith</h5>
+                            <small>Bucătar principal (Head Chef)</small>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a class="btn btn-square btn-primary mx-1" href="">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a class="btn btn-square btn-primary mx-1" href="">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="btn btn-square btn-primary mx-1" href="">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="images/teamP2.jpg" alt="Chef Photo">
+                            </div>
+                            <h5 class="mb-0">Marco Rossi</h5>
+                            <small>Bucătar de linie (Line Cook)</small>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a class="btn btn-square btn-primary mx-1" href="">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a class="btn btn-square btn-primary mx-1" href="">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="btn btn-square btn-primary mx-1" href="">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 wow fadeInUp">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="images/teamP4.jpg" alt="Chef Photo">
+                            </div>
+                            <h5 class="mb-0">Pierre Dupont</h5>
+                            <small>Bucătar sushi (Sushi Chef)</small>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a class="btn btn-square btn-primary mx-1" href="">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a class="btn btn-square btn-primary mx-1" href="">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="btn btn-square btn-primary mx-1" href="">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-lg-3 col-md-6 wow fadeInUp">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <div class="rounded-circle overflow-hidden m-4">
+                                <img class="img-fluid" src="images/teamP6.png" alt="Chef Photo">
+                            </div>
+                            <h5 class="mb-0">Sofia Müller</h5>
+                            <small>Bucătar patiserie (Pastry Chef)</small>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a class="btn btn-square btn-primary mx-1" href="">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a class="btn btn-square btn-primary mx-1" href="">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="btn btn-square btn-primary mx-1" href="">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Team section ends-->
+        <!-- Testimonials Section -->
+    <section id="testimonials" class="container py-5 mt-5">
+        <h2 class="text-center text-primary mb-4">Testimoniale</h2>
+        <div class="row g-4">
+            <!-- Testimonial 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-item bg-light text-center p-4 rounded shadow-sm">
+                    <div class="rating mb-3">
+                        <!-- Star icons -->
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-alt text-warning"></i>
+                    </div>
+                    <p class="text-muted">"Mâncarea a fost excelentă, iar atmosfera foarte plăcută. Recomand cu căldură acest restaurant!"</p>
+                    <h5 class="mt-3">Maria Popescu</h5>
+                </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-item bg-light text-center p-4 rounded shadow-sm">
+                    <div class="rating mb-3">
+                        <!-- Star icons -->
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="far fa-star text-warning"></i>
+                    </div>
+                    <p class="text-muted">"Serviciul a fost prompt și prietenos. O experiență minunată!"</p>
+                    <h5 class="mt-3">Ion Ionescu</h5>
+                </div>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-item bg-light text-center p-4 rounded shadow-sm">
+                    <div class="rating mb-3">
+                        <!-- Star icons -->
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-alt text-warning"></i>
+                        <i class="far fa-star text-warning"></i>
+                    </div>
+                    <p class="text-muted">"Deserturile sunt extraordinare! Merită încercate toate. Voi reveni cu siguranță."</p>
+                    <h5 class="mt-3">Andreea Dumitru</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Reviews Section -->
+    <section id="leave-review" class="container py-5 mt-5">
+    <h2 class="text-center text-primary mb-4">Lasă o recenzie</h2>
+    <p class="text-center mb-4">Ne-ar plăcea să aflăm părerea ta despre restaurantul nostru!</p>
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+            <form id="review-form" class="bg-light p-4 rounded shadow-sm" method="POST">
+                <!-- Star Rating -->
+                <div class="mb-4 text-center">
+                    <label for="rating" class="form-label fw-bold">Alege o notă:</label>
+                    <div id="star-rating" class="rating">
+                        <i class="fas fa-star text-muted" data-value="1"></i>
+                        <i class="fas fa-star text-muted" data-value="2"></i>
+                        <i class="fas fa-star text-muted" data-value="3"></i>
+                        <i class="fas fa-star text-muted" data-value="4"></i>
+                        <i class="fas fa-star text-muted" data-value="5"></i>
+                    </div>
+                </div>
+
+                <!-- Name Field -->
+                <div class="mb-4">
+                    <label for="review-name" class="form-label fw-bold">Nume:</label>
+                    <input type="text" class="form-control" id="review-name" name="name" placeholder="Introduceți numele" required>
+                </div>
+
+                <!-- Review Message -->
+                <div class="mb-4">
+                    <label for="review-message" class="form-label fw-bold">Mesaj:</label>
+                    <textarea class="form-control" id="review-message" name="message" rows="4" placeholder="Scrie-ți recenzia aici..." required></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary w-100">Trimite Recenzia</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+        <!--Footer section start-->
+    <section id="contact">
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-4 wow fadeInUp">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Companie</h4>
+                        <a href="" class="btn btn-link">Despre noi</a>
+                        <a href="" class="btn btn-link">Contact</a>
+                        <a href="" class="btn btn-link">Rezervari</a>
+                        <a href="" class="btn btn-link">Privacy Policy</a>
+                        <a href="" class="btn btn-link">Termeni & Condiții</a>
+                    </div>
+                    <div class="col-lg-3 col-lg-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt"></i> Str. Bucătarilor, nr. 1, Parter</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt"></i> 0236569568</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@restaurant.com</p>
+                        <div class="d-flex pt-2">
+                            <a href="" class="btn btn-outline-light btn-social"><i class="fab fa-twitter"></i></a>
+                            <a href="" class="btn btn-outline-light btn-social"><i class="fab fa-facebook-f"></i></a>
+                            <a href="" class="btn btn-outline-light btn-social"><i class="fab fa-youtube"></i></a>
+                            <a href="" class="btn btn-outline-light btn-social"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Program</h4>
+                        <h5 class="text-light fw-normal">Luni - Sâmbată</h5>
+                        <p>09AM - 09PM</p>
+                        <h5 class="text-light fw-normal">Duminică</h5>
+                        <p>10AM - 10PM</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
+                        <h5>Abonează-te la Newsletter-ul nostru!</h5>
+                        <p>Fii la curent cu ultimele noutăți, oferte speciale și rețete exclusiviste direct în inbox-ul tău! Abonează-te acum pentru a primi informații despre evenimentele noastre speciale, promoții, meniuri noi și multe alte surprize din lumea restaurantului nostru. Nu rata ocazia de a fi printre primii care află despre ce este nou la noi.</p>
+                        <p>În fiecare săptămână, îți trimitem cele mai relevante și delicioase noutăți, astfel încât să nu pierzi nimic important!</p>
+                        <div class="position-relative mx-auto">
+                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text">
+                            <button class="btn btn-primary py-2 position-absolute">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center mb-3 mb-md-0 col-lg-12">
+                            &copy; <a class="border-bottom" href="">All right Reserved</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!--Footer section ends-->
+
+        <!-- Butonul Back to Top -->
+        <a href="#" id="backToTopBtn" class="back-to-top"><i class="fa-solid fa-circle-up"></i></a>
+        <!-- Alertă pentru mesajul de succes / eroare -->
+        <div id="reservation-alert" style="display: none; padding: 20px; background-color: #4CAF50; color: white; position: fixed; top: 10px; left: 50%; transform: translateX(-50%); border-radius: 5px; z-index: 9999;">
+            Rezervarea a fost înregistrată cu succes!
+        </div>
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
